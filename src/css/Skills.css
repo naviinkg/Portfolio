@@ -1,0 +1,16 @@
+.skills{
+    background-color: rgb(240, 258, 259);
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 30%;
+    border-color: black;
+    padding-bottom: 50px;
+}
+
+h6{
+    margin-top: 20px;
+}
+
+.random{
+    align-items: center;
+}

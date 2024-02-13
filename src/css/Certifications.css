@@ -1,0 +1,13 @@
+.certifications {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    background-color: rgb(200, 208, 209);
+    border-radius: 40%;
+    border-color: black;
+    padding-bottom: 50px;
+}
+
+
+.innerContainer {
+   background-color: black;
+}

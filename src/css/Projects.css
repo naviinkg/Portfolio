@@ -1,0 +1,19 @@
+.Projects {
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+    /* padding-top: 50px; */
+    /* padding-bottom: 100px; */
+    background-color: rgb(240, 248, 245);
+    border-radius: 80%;
+    padding-bottom: 50px;
+}
+
+h1{
+    text-align: center;
+    color: rgb(77, 50, 54)
+}
+
+.Cards{
+    background-color: black;
+}
