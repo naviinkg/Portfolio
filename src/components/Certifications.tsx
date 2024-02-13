@@ -1,6 +1,6 @@
 import { CardGroup, Container } from 'react-bootstrap';
 import { Card, Button, Modal } from 'react-bootstrap';
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 import '../css/Certifications.css';
 

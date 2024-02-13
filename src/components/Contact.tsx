@@ -1,6 +1,4 @@
 import { Container } from "react-bootstrap";
-import React from 'react';
-import { MDBBtn, MDBIcon } from 'mdb-react-ui-kit';
 
 function Contact() {
     return(
