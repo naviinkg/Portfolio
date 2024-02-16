@@ -2,7 +2,13 @@ import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 
-const Offcanvas1 = () => {
+interface canvasProps{
+  title:string,
+  description:string,
+  logo: string
+}
+
+function Offcanvas1(props:canvasProps)  {
  const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -10,17 +16,19 @@ const Offcanvas1 = () => {
 
   return (
     <>
-      <Button variant="primary" onClick={handleShow}>
-        Launch
+      <Button variant="primary" onClick={handleShow} style={{marginTop: '-10px', height:'34px', width: '130px'}}>
+        Know More
       </Button>
 
       <Offcanvas show={show} onHide={handleClose}>
         <Offcanvas.Header closeButton>
-          <Offcanvas.Title>Offcanvas</Offcanvas.Title>
+          <Offcanvas.Title>
+            <img src={props.logo} alt='' style={{ marginRight: '10px', width: '50px', height: '50px' }} />  
+            {props.title}
+          </Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
-          Some text as placeholder. In real life you can have the elements you
-          have chosen. Like, text, images, lists, etc.
+          {props.description}
         </Offcanvas.Body>
       </Offcanvas>
     </>

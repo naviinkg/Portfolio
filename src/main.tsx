@@ -2,7 +2,7 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import Header from './components/Header.tsx'
 import TitleCard from './components/TitleCard.tsx'
-import './index.css';
+// import './index.css';
 import Projects from './components/Projects.tsx'
 import Experience from './components/Experience.tsx'
 import Skills from './components/Skills.tsx'

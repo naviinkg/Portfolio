@@ -1,48 +1,69 @@
-.container1{
-    margin-top: 250px;
-    margin-left: 70px;
-    margin-right: 5px;
-    margin-bottom: 300px;
-    
+.container1 {
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}   
 
-    /* display: flex; */
-    /* justify-content: space-around; */
-    
-}
-
-/* .image1{
-    background-color:blue;
-     float: left; 
-    margin-right: 20px;
-    margin-bottom: 8px;
-    border-radius: 20px;
-    width: 250px;
-    
-    opacity: 80%;
-} */
-
-.TitleContents{
-    color:aliceblue;
-    font-weight:normal;
+.leftContent {
+    margin-bottom: 20px;
     text-align: center;
-
 }
 
-.Carousel{
-    background: url('https://images.unsplash.com/photo-1531297484001-80022131f5a1?q=80&w=1420&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
-    /* background:  center center fixed;  */
-     -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; 
-    
-    padding-top:50px;
-    padding-bottom: 100px;
+.rightContent {
+    margin-top: 20px;
+    text-align: center;
 }
 
+.profileImage {
+    border-radius: 50%;
+    border: 2px solid #333;
+    width: 80%;
+    max-width: 350px;
+    height: auto;
+    object-fit: cover;
+    margin-top: -25%;
+}
 
-h2{
+.TitleContents {
     color: aliceblue;
-    text-align: center;  
-    font-weight: bolder;  
+    font-weight: normal;
+    text-align: center;
+    margin-top: 1%;
+}
+
+.Carousel {
+    background: url('https://w.wallhaven.cc/full/lq/wallhaven-lqvq8p.jpg');
+    padding-top: 5%;
+    padding-bottom: 5%;
+    height: auto;
+    width: 100%;
+}
+
+h2 {
+    color: aliceblue;
+    font-weight: bolder;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .container1 {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .leftContent {
+        flex: 1;
+        margin-right: 20px;
+        margin-bottom: 0;
+        text-align: left;
+    }
+
+    .rightContent {
+        margin-top: 0;
+        text-align: right;
+    }
 }

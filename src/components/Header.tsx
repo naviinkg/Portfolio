@@ -10,7 +10,7 @@ import '../css/Header.css';
 
 function Header() {
     return (
-        <div className='Navbar' style = {{position: 'fixed', top: 0, width: '100%', zIndex: 1000 }}>     
+        <div className='Navbar' style = {{position: 'fixed', top: 0, width: '100%' }}>     
                 <JustifiedExample/>
         </div>
     )

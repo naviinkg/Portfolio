@@ -1,13 +1,13 @@
 .certifications {
-    margin-top: 50px;
-    margin-bottom: 50px;
-    background-color: rgb(200, 208, 209);
+    margin-top: 1%;
+    background-color: rgb(244, 247, 247);
     border-radius: 40%;
-    border-color: black;
-    padding-bottom: 50px;
+    margin-bottom: 15%;
+    width: 100%;
+    display: flexbox;
 }
 
 
 .innerContainer {
-   background-color: black;
+   width: 75%;
 }

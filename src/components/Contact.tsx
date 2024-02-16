@@ -3,6 +3,7 @@ import { Container } from "react-bootstrap";
 function Contact() {
     return(
         <Container id = "contact" className = 'Contact'>
+          <h4 style={{textAlign: 'center', color: 'rgb(94, 47, 55)'}}> Reach out to me at </h4>
             <ContactPage/>
         </Container>
     )
@@ -12,38 +13,38 @@ function Contact() {
 
 function ContactPage() {
     return (
-      <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '20px' }}>
+      <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '1%' }}>
         <button
-          style={{ backgroundColor: '#0082ca', color: '#ffffff', borderRadius: '10%', marginLeft: '80px' }}
+          style={{ backgroundColor: '#0082ca', color: '#ffffff', borderRadius: '10%', marginLeft: '1.5%' }}
           onClick={() => window.open('https://google.com', '_blank')}
         >
           LinkedIn
         </button>
   
         <button
-          style={{ backgroundColor: '#db4437', color: '#ffffff', borderRadius: '10%', marginLeft: '50px' }}
-          onClick={() => window.open('mailto:lucizodi@gmail.com', '_blank')}
-          title="send mail to me"
+          style={{ backgroundColor: '#db4437', color: '#ffffff', borderRadius: '10%', marginLeft: '1.5%' }}
+          onClick={() => window.open('mailto:kgnaveen2002@gmail.com', '_blank')}
+          title="send mail to kgnaveen2002@gmail.com"
         >
           Gmail
         </button>
   
         <button
-          style={{ backgroundColor: '#181717', color: '#ffffff', borderRadius: '10%', marginLeft: '50px' }}
+          style={{ backgroundColor: '#181717', color: '#ffffff', borderRadius: '10%', marginLeft: '1.5%' }}
           onClick={() => window.open('https://github.com', '_blank')}
         >
           GitHub
         </button>
   
         <button
-          style={{ backgroundColor: '#FFA116', color: '#ffffff', borderRadius: '10%', marginLeft: '50px' }}
+          style={{ backgroundColor: '#FFA116', color: '#ffffff', borderRadius: '10%', marginLeft: '1.5%' }}
           onClick={() => window.open('https://leetcode.com', '_blank')}
         >
           Leetcode
         </button>
   
         <button
-          style={{ backgroundColor: '#007bff', color: '#ffffff', borderRadius: '10%', marginLeft: '50px'  }}
+          style={{ backgroundColor: '#007bff', color: '#ffffff', borderRadius: '10%', marginLeft: '1.5%' }}
           onClick={() => window.open('tel:+1234567890', '_blank')}
           title="Call +1234567890"
         >

@@ -14,22 +14,29 @@ interface TooltipPositionedExampleProps {
 function Skills() {
 
     
-  const programming_skills: string[] = ['skill1', 'skill1', 'skill1', 'skill1', 'skill1'];
-  const programming_proficiency: string[] = ['good', 'bad', 'okay', 'nice', 'cool'];
+  const programming_skills: string[] = ['Java','SpringBoot', 'SQL','JSP/Servlets' ,'AWT/Swing' ,'Shell Scripting' ,'Python', 'ReactJs'];
+  const programming_proficiency: string[] = ['Excellent', 'Excellent', 'Excellent', 'Good', 'Good', 'Good', 'Learning', 'Learning'];
+
+  const tools_skills: string[] = ['Git/Github', 'JIRA', 'POSTMAN', 'AWS SQS', 'AWS Lambda', 'Cloudwatch', 'EC2 Instances'];
+  const tools_proficiency: string[] = ['Excellent', 'Excellent', 'Excellent', 'Good', 'Good', 'Good', 'Good'];
+
+  const database_skills: string[] = ['DBMS','Mysql', 'DynamoDB', 'Cloudsearch'];
+  const database_proficiency: string[] = ['Excellent', 'Excellent', 'Good', 'Good'];
+
+  const os_skills: string[] = ['Windows', 'Linux', 'MacOS'];
+  const os_proficiency: string[] = ['Excellent', 'Excellent', 'Good'];
 
     return (
         <Container className='skills' id = 'skills'>
-            <h1> Technological Proficiencies </h1>
-            <Container className='innerContainer' style={{marginLeft :'220px', backgroundColor: 'white'}}>
+            <h1> Skills </h1>
+            <Container className='innerContainerSkills' style={{marginLeft :'8%', backgroundColor: 'white'}}>
                 <h6> Programming Proficiencies </h6><TooltipPositionedExample skills={programming_skills} proficiency={programming_proficiency} />
             
-                <h6> Programming Proficiencies </h6><TooltipPositionedExample skills={programming_skills} proficiency={programming_proficiency} />
+                <h6> Tools Proficiencies </h6><TooltipPositionedExample skills={tools_skills} proficiency={tools_proficiency} />
         
-                <h6> Programming Proficiencies </h6><TooltipPositionedExample skills={programming_skills} proficiency={programming_proficiency} />
+                <h6> Database Proficiencies </h6><TooltipPositionedExample skills={database_skills} proficiency={database_proficiency} />
                 
-                <h6> Programming Proficiencies </h6><TooltipPositionedExample skills={programming_skills} proficiency={programming_proficiency} />
-                
-                <h6> Programming Proficiencies </h6><TooltipPositionedExample skills={programming_skills} proficiency={programming_proficiency} />
+                <h6> Operating System Proficiencies </h6><TooltipPositionedExample skills={os_skills} proficiency={os_proficiency} />
             </Container>
         </Container>
     )
@@ -50,7 +57,7 @@ function TooltipPositionedExample( {skills , proficiency} : TooltipPositionedExa
             </Tooltip>
           }
         >
-          <Button variant="secondary" style={{ marginRight: '40px'}}> {skills}</Button>
+          <Button variant="secondary" style={{ marginRight: '1%', marginTop: '1%'}}> {skills}</Button>
         </OverlayTrigger>
       ))}
     </Container>

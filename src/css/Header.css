@@ -3,8 +3,8 @@
   top: 0; /* Adjust this value as needed */
   left: 0; /* Adjust this value as needed */
   width: 100%; /* Assuming full width */
-  padding: 10px; /* Example padding */
   background-color: rgb(28, 24, 24);
+  display: block;
 }
 
 
