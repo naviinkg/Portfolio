@@ -1,6 +1,8 @@
 import Container from 'react-bootstrap/Container';
 import '../css/TitleCard.css'; // Import your image
 
+import profile from '../images/profileLogo.jpg'
+
 function TitleCard() {
     return (
         <div className='Carousel' id="home">
@@ -19,7 +21,7 @@ function TitleCard() {
                 </div>
 
                 <div className='rightContent' style={{marginBottom:'-10%'}}>
-                    <img src={'https://w0.peakpx.com/wallpaper/961/507/HD-wallpaper-sung-jin-woo-solo-leveling-thumbnail.jpg'} alt="Profile" className="profileImage" />
+                    <img src={profile} alt="Profile" className="profileImage" />
                 </div>
             </Container>    
         </div>
