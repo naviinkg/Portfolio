@@ -22,14 +22,13 @@ function GroupExample() {
   return (
     <CardGroup>
       <Card>
-          <Card.Title>
+          <Card.Title style={{display: 'flex', justifyContent: 'center'}}>
             <a href = "https://github.com/K-Jeyavenkatesh/ISHOP" target="_blank" rel="noopener noreferrer">
               <img src = "https://banner2.cleanpng.com/20180519/jjs/kisspng-e-commerce-logo-electronic-business-5b00d2d0918d84.2335269315267806245962.jpg"
                 style={{
                   width:'120px',
                   height: '120px',
-                  marginLeft: '140px',
-                  marginTop: '25px'
+                  marginTop: '10%'
                 }}
               />
             </a>
@@ -45,14 +44,13 @@ function GroupExample() {
         </Card.Footer>
       </Card>
       <Card>
-          <Card.Title>
+          <Card.Title style={{display: 'flex', justifyContent: 'center'}}>
             <a href = "https://github.com/Hitzzmuhil/Bootathon2" target="_blank" rel="noopener noreferrer">
               <img src = "https://c8.alamy.com/comp/WA0Y19/vector-logo-for-bidding-and-auctions-WA0Y19.jpg"
                 style={{
                   width:'120px',
                   height: '120px',
-                  marginLeft: '140px',
-                  marginTop: '25px'
+                  marginTop: '10%'
                 }}
               />
             </a>
@@ -68,13 +66,12 @@ function GroupExample() {
         </Card.Footer>
       </Card>
       <Card>
-          <Card.Title>
+          <Card.Title style={{display: 'flex', justifyContent: 'center'}}>
             <img src = "https://banner2.cleanpng.com/20180330/toq/kisspng-portfolio-kitchen-photography-studio-apartment-portfolio-5abe433027c374.8238636815224184801629.jpg"
             style={{
               width:'120px',
               height: '120px',
-              marginLeft: '140px',
-              marginTop: '25px'
+              marginTop: '10%'
             }}
             />
           </Card.Title>

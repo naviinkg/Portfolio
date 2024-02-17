@@ -5,6 +5,7 @@
   width: 100%; /* Assuming full width */
   background-color: rgb(28, 24, 24);
   display: block;
+  z-index: 1000;
 }
 
 
