@@ -16,7 +16,7 @@ function ContactPage() {
       <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '1%' }}>
         <button
           style={{ backgroundColor: '#0082ca', color: '#ffffff', borderRadius: '10%', marginLeft: '1.5%' }}
-          onClick={() => window.open('https://google.com', '_blank')}
+          onClick={() => window.open('https://www.linkedin.com/in/naveen-kavitha-gunasekaran-53a996206/', '_blank')}
         >
           LinkedIn
         </button>

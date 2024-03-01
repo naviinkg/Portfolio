@@ -2,34 +2,47 @@ import { useState } from 'react';
 import Button from 'react-bootstrap/Button';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 
-interface canvasProps{
-  title:string,
-  description:string,
-  logo: string
+interface CanvasProps {
+  title: string;
+  description: string;
+  logo: string;
 }
 
-function Offcanvas1(props:canvasProps)  {
- const [show, setShow] = useState(false);
+function Offcanvas1(props: CanvasProps) {
+  const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
 
+  // Function to split the description into points
+  const renderPoints = (description: string) => {
+    return description.split('.').map((point, index) => (
+      <p key={index}>{point}</p>
+    ));
+  };
+
   return (
     <>
-      <Button variant="primary" onClick={handleShow} style={{marginTop: '-10px', height:'34px', width: '130px'}}>
+      <Button
+        variant="primary"
+        onClick={handleShow}
+        
+      >
         Know More
       </Button>
 
       <Offcanvas show={show} onHide={handleClose}>
         <Offcanvas.Header closeButton>
           <Offcanvas.Title>
-            <img src={props.logo} alt='' style={{ marginRight: '10px', width: '50px', height: '50px' }} />  
+            <img
+              src={props.logo}
+              alt=""
+              style={{ marginRight: '10px', width: '50px', height: '50px' }}
+            />
             {props.title}
           </Offcanvas.Title>
         </Offcanvas.Header>
-        <Offcanvas.Body>
-          {props.description}
-        </Offcanvas.Body>
+        <Offcanvas.Body>{renderPoints(props.description)}</Offcanvas.Body>
       </Offcanvas>
     </>
   );

@@ -7,6 +7,8 @@ import javascript from '../images/hackerrank javascript_basic certificate.png';
 import java from '../images/hackerrannk java_basic certificate.png';
 import sql from '../images/hackerrank sql_intermediate certificate.png';
 import neoCodathon from '../images/Neo-codathon.png';
+import springBoot from '../images/Springboot_Certificate.jpg';
+
 
 interface certificateProps {
     title: string,
@@ -32,7 +34,7 @@ function Certifications() {
 
     
     const codathon : certificateProps= {
-        title: ' National Codathon',
+        title: 'Top Five in National Codathon',
         description: '',
         image: neoCodathon
     }
@@ -44,8 +46,14 @@ function Certifications() {
         image: java
     }
 
-    const certificateArray: certificateProps[] = [javaScript, Sql]
-    const certificateArray2: certificateProps[] = [codathon, Java]
+    const SpringBoot : certificateProps= {
+        title: 'SpringBoot',
+        description: '',
+        image: springBoot
+    }
+
+    const certificateArray: certificateProps[] = [Java, SpringBoot]
+    const certificateArray2: certificateProps[] = [codathon, Sql, javaScript]
 
     return (
         <Container className='certifications' id = 'certifications'>
@@ -85,7 +93,7 @@ function BasicExample({ certificateArray } : { certificateArray: certificateProp
                             variant="top"
                             src={certificate.image}
                             onClick={() => handleShowModal(index)}
-                            style={{ cursor: 'pointer', width: '30%', height: '70%', display: 'block', margin: 'auto', marginTop: '3%'}}
+                            style={{ cursor: 'pointer', width: '50%', height: '60%', margin: 'auto', marginTop: '3%'}}
                         />
                         <Card.Body >
                             <Card.Title className="text-center">{certificate.title}</Card.Title>
