@@ -27,8 +27,8 @@ function Skills() {
   const os_proficiency: string[] = ['Excellent', 'Excellent', 'Good'];
 
     return (
-        <Container className='skills' id = 'skills'>
-            <h1> Skills </h1>
+        <Container className='skills' >
+            <h1 id = 'skills'> Skills </h1>
             <Container className='innerContainerSkills' style={{marginLeft :'8%', backgroundColor: 'white'}}>
                 <h6> Programming Proficiencies </h6><TooltipPositionedExample skills={programming_skills} proficiency={programming_proficiency} />
             

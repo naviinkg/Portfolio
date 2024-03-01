@@ -2,8 +2,8 @@ import { Container } from "react-bootstrap";
 
 function Contact() {
     return(
-        <Container id = "contact" className = 'Contact'>
-          <h4 style={{textAlign: 'center', color: 'rgb(94, 47, 55)'}}> Reach out to me at </h4>
+        <Container  className = 'Contact'>
+          <h4 id = "contact" style={{textAlign: 'center', color: 'rgb(94, 47, 55)'}}> Reach out to me at </h4>
             <ContactPage/>
         </Container>
     )
@@ -45,7 +45,7 @@ function ContactPage() {
   
         <button
           style={{ backgroundColor: '#007bff', color: '#ffffff', borderRadius: '10%', marginLeft: '1.5%' }}
-          onClick={() => window.open('tel:+1234567890', '_blank')}
+          onClick={() => window.open('tel:+18573978326', '_blank')}
           title="Call +1234567890"
         >
           Phone

@@ -8,8 +8,8 @@ import '../css/Projects.css';
 
 function Projects(){
     return(
-        <Container className="Projects" id="projects">
-            <h1> Projects </h1>
+        <Container className="Projects" >
+            <h1 id="projects"> Projects </h1>
             <div className="Cards">
                 <GroupExample/>
             </div>

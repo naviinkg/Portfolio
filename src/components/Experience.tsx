@@ -62,9 +62,9 @@ function Experience() {
     const experienceArray : experienceProps[] = [amazon, fourkites, zoho1, zoho2];
 
     return (
-        <Container className='Experience' id = "experiences">
-            <h1> Experiences </h1>
-            <HeaderAndFooterExample experienceArray = {experienceArray}/>
+        <Container className='Experience' >
+            <h1 id = "experiences"> Experiences </h1>
+            <HeaderAndFooterExample experienceArray = {experienceArray} />
             </Container>
     );
 }

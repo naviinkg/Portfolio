@@ -56,8 +56,8 @@ function Certifications() {
     const certificateArray2: certificateProps[] = [codathon, Sql, javaScript]
 
     return (
-        <Container className='certifications' id = 'certifications'>
-            <h1> Certifications </h1>
+        <Container className='certifications' >
+            <h1 id = 'certifications'> Certifications </h1>
             <Container className='innerContainer'>
                     <BasicExample certificateArray = {certificateArray}/>
                     <BasicExample certificateArray = {certificateArray2}/>
