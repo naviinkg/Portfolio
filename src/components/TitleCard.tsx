@@ -1,7 +1,7 @@
 import Container from 'react-bootstrap/Container';
 import '../css/TitleCard.css'; // Import your image
 
-import profile from '../images/profileLogo.jpg'
+import profile from '../images/cartoonize_IMG_4002.jpg'
 
 function TitleCard() {
     return (

@@ -20,12 +20,12 @@
 
 .profileImage {
     border-radius: 50%;
-    border: 2px solid #333;
-    width: 80%;
+    border: 2px solid #fdfcfc;
+    width: 100%;
     max-width: 350px;
     height: auto;
     object-fit: cover;
-    margin-top: -25%;
+    margin-top: -7%;
 }
 
 .TitleContents {
