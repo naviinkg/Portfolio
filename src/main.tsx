@@ -2,8 +2,13 @@ import React, { useState } from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 
+interface FrontPageProps {
+  handlePortfolioClick: () => void;
+  handleOtherPageClick: () => void;
+}
+
 // Define your front page component
-function FrontPage({ handlePortfolioClick, handleOtherPageClick }) {
+function FrontPage({ handlePortfolioClick, handleOtherPageClick } : FrontPageProps) {
   return (
     <div className="front-page">
       <h1>Welcome to My Portfolio Selection Page</h1>
