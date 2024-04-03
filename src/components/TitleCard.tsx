@@ -2,17 +2,20 @@ import Container from 'react-bootstrap/Container';
 import '../css/TitleCard.css'; // Import your image
 
 import profile from '../images/cartoonize_IMG_4002.jpg'
+import PortfolioText from './PortfolioText';
 
 function TitleCard() {
     return (
         <div className='Carousel' id="home" style={{display:'flex', justifyContent:'center'}}>
           <Container className='container1'>
             <div className='leftContent' style={{ marginBottom: '20%', textAlign: 'center', marginRight:'10%' }}>
-                    <h2 style={{ textAlign: 'center', marginTop: 'calc(50px + 2%)', paddingLeft: '5%', paddingRight: '5%' }}>Welcome to my Page</h2>
+                    <PortfolioText/>
                     <p className='TitleContents'>
                         Hey there, This is Naveen and you're looking at my portfolio webpage. 
-                        This page was, is, and will be under construction as I tend to pick up new things and test them here (at least for now).
+                        This page was, is, and will be under construction as I tend to pick up new things and test them here (atleast for now) 
+                        <br/>PS: try clicking on every component.
                     </p>
+                    <br/>
 
                     <p className='TitleContents'>
                         I am a Data Science graduate student with a Computer Science undergraduate degree. Have fun looking around and do hit me up 

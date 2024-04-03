@@ -1,0 +1,16 @@
+.fade-in {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out;
+    color: aliceblue;
+    font-weight: bolder;
+    text-align: center;
+  }
+  
+  .fade-out {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    color: aliceblue;
+    font-weight: bolder;
+    text-align: center;
+  }
+  
