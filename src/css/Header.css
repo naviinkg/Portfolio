@@ -1,12 +1,54 @@
 .Navbar {
-  position: fixed; /* or absolute */
-  top: 0; /* Adjust this value as needed */
-  left: 0; /* Adjust this value as needed */
-  width: 100%; /* Assuming full width */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   background-color: rgb(28, 24, 24);
-  display: block;
   z-index: 1000;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
 }
 
+.nav-tabs {
+  width: 100%;
+  max-width: 1200px;
+}
 
+.nav-tabs .nav-item {
+  flex: 1;
+}
+
+.nav-tabs .nav-link {
+  color: blanchedalmond;
+  font-size: 1rem;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: rgb(45, 45, 45);
+}
+
+/* Dropdown styles */
+.nav-dropdown {
+  color: blanchedalmond;
+  background-color: rgb(28, 24, 24);
+  border: none;
+  width: 100%;
+  text-align: center;
+}
+
+.nav-dropdown::after {
+  display: none;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .nav-tabs {
+    display: none;
+  }
+
+  .nav-dropdown {
+    display: block;
+  }
+}
 

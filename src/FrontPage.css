@@ -1,0 +1,70 @@
+.front-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(to bottom right, #e0f7fa, #b2ebf2); /* Light blue gradient background */
+    text-align: center;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    color: #0277bd; /* Dark blue color for the heading */
+    margin-bottom: 20px;
+  }
+  
+  h2 {
+    font-size: 1.75rem;
+    color: #000504; /* Dark teal color for the subheading */
+    margin-bottom: 40px; /* Space below the h2 */
+  }
+  
+  .button-container {
+    display: flex;
+    flex-direction: column; /* Stack buttons vertically on small screens */
+    align-items: center;
+    gap: 20px; /* Space between buttons */
+    margin-bottom: 40px; /* Space below the button container */
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 15px 30px; /* Larger padding for bigger buttons */
+    font-size: 1.5rem; /* Larger font size */
+    font-weight: bold; /* Bold text */
+    color: #fff;
+    background-color: #00796b; /* Teal color for the buttons */
+    border: 2px solid #004d40; /* Darker teal border */
+    border-radius: 10px; /* Rounded corners */
+    text-decoration: none;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Shadow for depth */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+  }
+  
+  .btn:hover {
+    background-color: #004d40; /* Darker teal color on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+  }
+  
+  .game-container {
+    margin: 20px 0;
+    padding: 10px;
+    width: 90%; /* Adjusted width for better responsiveness */
+    max-width: 600px; /* Limit the maximum width */
+    border: 2px solid #004d40; /* Border around the game container */
+    border-radius: 10px; /* Rounded corners for the border */
+    background: #fff; /* White background for the game container */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  @media (max-width: 1024px) {
+    .game-container {
+      display: none; /* Hide the game container on screens smaller than 1024px */
+    }
+  }
+  

@@ -29,7 +29,7 @@ function Skills() {
     return (
         <Container className='skills' >
             <h1 id = 'skills'> Skills </h1>
-            <Container className='innerContainerSkills' style={{marginLeft :'8%', backgroundColor: 'white'}}>
+            <Container className='innerContainerSkills' style={{marginLeft :'0%', backgroundColor: 'white'}}>
                 <h6> Programming Proficiencies </h6><TooltipPositionedExample skills={programming_skills} proficiency={programming_proficiency} />
             
                 <h6> Tools Proficiencies </h6><TooltipPositionedExample skills={tools_skills} proficiency={tools_proficiency} />

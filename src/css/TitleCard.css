@@ -1,8 +1,26 @@
+.Carousel {
+    background: url('../images/titleCardLogo.jpg') no-repeat center center;
+    background-size: cover;
+    padding-top: 150px; /* Increased padding to push the content down */
+    padding-bottom: 5%;
+    width: 100%;
+    height: auto;
+    padding-left: 5%;
+}
+
+/* Header CSS */
+.Navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgb(28, 24, 24);
+  display: block;
+  z-index: 1000;
+}
+
 .container1 {
-    margin-top: 5%;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-bottom: 5%;
+    margin: 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -25,7 +43,7 @@
     max-width: 350px;
     height: auto;
     object-fit: cover;
-    margin-top: -7%;
+    margin-top: 10px;
 }
 
 .TitleContents {
@@ -35,24 +53,18 @@
     margin-top: 1%;
 }
 
-.Carousel {
-    background: url('../images/titleCardLogo.jpg');
-    padding-top: 5%;
-    padding-bottom: 5%;
-    height: auto;
-    width: 100%;
-}
-
 h2 {
     color: aliceblue;
     font-weight: bolder;
     text-align: center;
 }
 
+/* Responsive styles */
 @media (min-width: 768px) {
     .container1 {
         flex-direction: row;
         align-items: flex-start;
+        margin: 2% 5%;
     }
 
     .leftContent {
@@ -66,3 +78,15 @@ h2 {
         text-align: right;
     }
 }
+
+/* Ensure the layout works well on small screens */
+@media (max-width: 767px) {
+    .profileImage {
+        max-width: 250px; /* Adjust size for smaller screens */
+    }
+
+    .container1 {
+        margin: 2%;
+    }
+}
+
