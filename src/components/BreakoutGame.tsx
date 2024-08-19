@@ -36,10 +36,11 @@ const BreakoutGame: React.FC = () => {
     let rightPressed = false;
     let leftPressed = false;
 
+    // Initialize bricks
     const bricks = Array.from({ length: brickColumnCount }, (_, c) =>
       Array.from({ length: brickRowCount }, (_, r) => ({
-        x: 0,
-        y: 0,
+        x: c * (brickWidth + brickPadding) + brickOffsetLeft,
+        y: r * (brickHeight + brickPadding) + brickOffsetTop,
         status: 1,
       }))
     );
@@ -103,13 +104,10 @@ const BreakoutGame: React.FC = () => {
       if (ctx) {
         for (let c = 0; c < brickColumnCount; c++) {
           for (let r = 0; r < brickRowCount; r++) {
-            if (bricks[c][r].status === 1) {
-              const brickX = c * (brickWidth + brickPadding) + brickOffsetLeft;
-              const brickY = r * (brickHeight + brickPadding) + brickOffsetTop;
-              bricks[c][r].x = brickX;
-              bricks[c][r].y = brickY;
+            const brick = bricks[c][r];
+            if (brick.status === 1) {
               ctx.beginPath();
-              ctx.rect(brickX, brickY, brickWidth, brickHeight);
+              ctx.rect(brick.x, brick.y, brickWidth, brickHeight);
               ctx.fillStyle = '#2196f3'; // Blue color for the bricks
               ctx.fill();
               ctx.closePath();
