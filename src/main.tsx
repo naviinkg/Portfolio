@@ -1,26 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import './main.css';
 
-interface FrontPageProps {
-  handlePortfolioClick: () => void;
-  handleOtherPageClick: () => void;
-}
-
-// Define your front page component
-function FrontPage({ handlePortfolioClick, handleOtherPageClick } : FrontPageProps) {
-  return (
-    <div className="front-page">
-      <h1>Welcome to My Portfolio Selection Page</h1>
-      <div className="button-container">
-        <button className="portfolio-button" onClick={handlePortfolioClick}>Go to HandMade Portfolio</button>
-        <button className="other-page-button" onClick={handleOtherPageClick}>Go to Automated Portfolio</button>
-      </div>
-    </div>
-  );
-}
-
-// Your existing components
 import Header from './components/Header.tsx';
 import TitleCard from './components/TitleCard.tsx';
 import Projects from './components/Projects.tsx';
@@ -30,38 +12,46 @@ import Certifications from './components/Certifications.tsx';
 import Contact from './components/Contact.tsx';
 import PortfolioText from './components/PortfolioText.tsx';
 
-function App() {
-  const [showFrontPage, setShowFrontPage] = useState(true);
-
-  const handlePortfolioClick = () => {
-    setShowFrontPage(false);
-  };
-
-  const handleOtherPageClick = () => {
-    window.location.href = 'https://sites.google.com/view/naveenkg/home'; // Change this to the URL of your other page
-  };
-
+// Define your front page component
+function FrontPage() {
   return (
-    <React.StrictMode>
-      
-      {showFrontPage ? (
-        <FrontPage
-          handlePortfolioClick={handlePortfolioClick}
-          handleOtherPageClick={handleOtherPageClick}
-        />
-      ) : (
-        <>
-          <Header />
-          <TitleCard />
-          <Projects />
-          <Experience />
-          <Skills />
-          <Certifications />
-          <Contact />
-          <PortfolioText />
-        </>
-      )}
-    </React.StrictMode>
+    <div className="front-page">
+      <h1>Welcome to My Portfolio Selection Page</h1>
+      <div className="button-container">
+        <Link to="/Portfolio/handmade-portfolio">
+          <button className="portfolio-button">Go to HandMade Portfolio</button>
+        </Link>
+        <a href="https://sites.google.com/view/naveenkg/home">
+          <button className="other-page-button">Go to Automated Portfolio</button>
+        </a>
+      </div>
+    </div>
+  );
+}
+
+function HandMadePortfolio() {
+  return (
+    <>
+      <Header />
+      <TitleCard />
+      <Projects />
+      <Experience />
+      <Skills />
+      <Certifications />
+      <Contact />
+      <PortfolioText />
+    </>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/Portfolio/" element={<FrontPage />} />
+        <Route path="/Portfolio/handmade-portfolio" element={<HandMadePortfolio />} />
+      </Routes>
+    </Router>
   );
 }
 

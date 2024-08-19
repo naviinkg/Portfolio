@@ -7,6 +7,7 @@ import '../css/Experiences.css';
 import amazonLogo from '../images/amazon.png';
 import fourkitesLogo from '../images/fourkites.jpg';
 import zohoLogo from '../images/zoho.png';
+import NEUlogo from '../images/NEU.png';
 
 interface experienceProps{
     title: string,
@@ -45,21 +46,31 @@ function Experience() {
         date: "Aug 2022 - Jan 2023"
     }
     
-    const zoho1 :experienceProps = {
-        title: "Zoho Corp, IN",
-        desc1: "Summer Intern ",
-        desc2: "Acquired practical experience in Java multi-threading by developing a sample chat application.",
-        date: "May 2022 - Jun 2022"
-    }
+    // const zoho1 :experienceProps = {
+    //     title: "Zoho Corp, IN",
+    //     desc1: "Summer Intern ",
+    //     desc2: "Acquired practical experience in Java multi-threading by developing a sample chat application.",
+    //     date: "May 2022 - Jun 2022"
+    // }
     
-    const zoho2 :experienceProps = {
-        title: "Zoho Corp, IN",
-        desc1: " MTS Incubation ",
-        desc2: "Worked with the team to solve multiple bugs. Mentored fellow collegues on Java. ",
-        date: "Aug 2023 - Nov 2023"
-    }
+    // const zoho2 :experienceProps = {
+    //     title: "Zoho Corp, IN",
+    //     desc1: " MTS Incubation ",
+    //     desc2: "Worked with the team to solve multiple bugs. Mentored fellow collegues on Java. ",
+    //     date: "Aug 2023 - Nov 2023"
+    // }
 
-    const experienceArray : experienceProps[] = [amazon, fourkites, zoho1, zoho2];
+    const TA :experienceProps = {
+            title: "Teaching Assistant",
+            desc1: "Foundations of Data Science, Northeastern University",
+            desc2: "Evaluated student assignments and provided constructive feedback, ensuring a clear understanding of foundational data science concepts." 
+            + "Conducted regular office hours to assist students with course material, assignment queries, and conceptual understanding, fostering a supportive learning environment."
+            + "Developed and reviewed solutions for assignment questions, ensuring accuracy and clarity to aid student comprehension and learning."
+            + "Offered personalized guidance and mentorship to students, helping them navigate course challenges and achieve academic success.",
+            date: "May 2024 - Dec 2024"
+        }
+
+    const experienceArray : experienceProps[] = [amazon, fourkites, TA];
 
     return (
         <Container className='Experience' >
@@ -99,6 +110,8 @@ function getImageSource(title: string): string {
             return fourkitesLogo;
         case 'Zoho Corp, IN':
             return zohoLogo;
+        case 'Teaching Assistant':
+            return NEUlogo;
         
         default:
             return ''; 
