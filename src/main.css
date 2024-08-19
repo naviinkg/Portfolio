@@ -1,0 +1,30 @@
+.front-page {
+  background-color: #f7f7f7;
+  padding: 20px;
+  text-align: center;
+}
+
+.front-page h1 {
+  color: #333;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.portfolio-button,
+.other-page-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.other-page-button {
+  background-color: #28a745;
+}
