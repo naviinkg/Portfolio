@@ -14,23 +14,6 @@ import Contact from './components/Contact.tsx';
 import PortfolioText from './components/PortfolioText.tsx';
 
 
-// Define your front page component
-// function FrontPage() {
-//   return (
-//     <div className="front-page">
-//       <h1>Welcome to My Portfolio Selection Page</h1>
-//       <div className="button-container">
-//         <Link to="/Portfolio/handmade-portfolio">
-//           <button className="portfolio-button">Go to HandMade Portfolio</button>
-//         </Link>
-//         <a href="https://sites.google.com/view/naveenkg/home">
-//           <button className="other-page-button">Go to Automated Portfolio</button>
-//         </a>
-//       </div>
-//     </div>
-//   );
-// }
-
 function HandMadePortfolio() {
   return (
     <>
