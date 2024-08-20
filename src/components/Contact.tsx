@@ -31,14 +31,14 @@ function ContactPage() {
   
         <button
           style={{ backgroundColor: '#181717', color: '#ffffff', borderRadius: '10%', marginLeft: '1.5%' }}
-          onClick={() => window.open('https://github.com', '_blank')}
+          onClick={() => window.open('https://github.com/naviinkg', '_blank')}
         >
           GitHub
         </button>
   
         <button
           style={{ backgroundColor: '#FFA116', color: '#ffffff', borderRadius: '10%', marginLeft: '1.5%' }}
-          onClick={() => window.open('https://leetcode.com', '_blank')}
+          onClick={() => window.open('https://leetcode.com/u/NaveenZ', '_blank')}
         >
           Leetcode
         </button>

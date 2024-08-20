@@ -6,17 +6,18 @@ import Dropdown from 'react-bootstrap/Dropdown';
 import '../css/Header.css';
 
 function Header() {
-    return (
-        <div className='Navbar'>
-            <ResponsiveTabs />
-        </div>
-    );
+  return (
+    <div className='Navbar'>
+      <ResponsiveTabs />
+    </div>
+  );
 }
 
 function ResponsiveTabs() {
-  const [activeTab, setActiveTab] = useState("home");
-  const [isMobile, setIsMobile] = useState(false);
+  const [activeTab, setActiveTab] = useState<string>("home");
+  const [isMobile, setIsMobile] = useState<boolean>(false);
 
+  // Handle window resize to toggle mobile view
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 768);
@@ -30,21 +31,42 @@ function ResponsiveTabs() {
     };
   }, []);
 
+  // Handle scroll events to update the active tab
+  useEffect(() => {
+    const sections = document.querySelectorAll("section[id]");
+    const observerOptions = {
+      rootMargin: '0px',
+      threshold: 0.5 // Adjust this value to determine when a section is considered in view
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          setActiveTab(entry.target.getAttribute("id") || "home");
+        }
+      });
+    }, observerOptions);
+
+    sections.forEach(section => observer.observe(section));
+
+    return () => {
+      sections.forEach(section => observer.unobserve(section));
+    };
+  }, []);
+
+  // Scroll to the section when a tab is selected
   useEffect(() => {
     const section = document.getElementById(activeTab);
-
     if (section) {
       window.scrollTo({
-        top: section.offsetTop - 120,
+        top: section.offsetTop - 60, // Adjust for header height
         behavior: "smooth"
       });
     }
   }, [activeTab]);
 
   const handleSelect = (tabKey: string | null) => {
-    if (typeof tabKey === "string") {
-      setActiveTab(tabKey);
-    }
+    setActiveTab(tabKey || "home");
   };
 
   return isMobile ? (

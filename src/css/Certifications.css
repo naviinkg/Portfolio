@@ -12,3 +12,9 @@
    width: 75%;
 }
 
+.hint {
+    margin-top: 20px;
+    text-align: center;
+    font-style: italic;
+    color: #555;
+}
