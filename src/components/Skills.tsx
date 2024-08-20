@@ -24,11 +24,14 @@ function Skills() {
   const os_skills: string[] = ['Windows', 'Linux', 'MacOS'];
   const os_proficiency: string[] = ['Excellent', 'Excellent', 'Good'];
 
+  const datascience: string[] = ['Python for Data Science', 'Jupyter Notebook', 'Google Colab', 'Supervised Learning', 'Model Evaluation'];
+  const datascience_proficiency: string[] = ['Good', 'Excellent', 'Excellent', 'Good', 'Good'];
+
   return (
     <Container className='skills'>
       <h1 id='skills'>Skills</h1>
       <div className="hint">
-        <p>Click on a skill to see the proficiency level.</p>
+        <p>Hover over a skill to see the proficiency level.</p>
       </div>
       <Container className='innerContainerSkills' style={{ marginLeft: '0%', backgroundColor: 'white' }}>
         <h6>Programming Proficiencies</h6>
@@ -42,6 +45,9 @@ function Skills() {
         
         <h6>Operating System Proficiencies</h6>
         <TooltipPositionedExample skills={os_skills} proficiency={os_proficiency} />
+
+        <h6>Data Science Expertise</h6>
+        <TooltipPositionedExample skills={datascience} proficiency={datascience_proficiency} />
       </Container>
     </Container>
   )
