@@ -58,6 +58,10 @@ function Certifications() {
     return (
         <Container className='certifications' >
             <h1 id = 'certifications'> Certifications </h1>
+            
+            <div className="hint">
+            <p>Click on a Certificate to magnify.</p>
+            </div>
             <Container className='innerContainer'>
                     <BasicExample certificateArray = {certificateArray}/>
                     <BasicExample certificateArray = {certificateArray2}/>

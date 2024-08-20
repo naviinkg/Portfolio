@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import '../css/PortfolioText.css'; // Import CSS file for animations
 
 const PortfolioText: React.FC = () => {
-    const roles = ['Software Developer', 'Data Science Graduate', 'Backend Developer', 'Frontend Developer', 'Full Stack Developer'];
+    const roles = ['Software Developer', 'Data Science Graduate', 'Full Stack Developer', 'Teaching Assistant'];
     const [roleIndex, setRoleIndex] = useState<number>(0);
     const [isFading, setIsFading] = useState<boolean>(false);
   

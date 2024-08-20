@@ -1,20 +1,30 @@
 .Projects {
-
     margin-top: 50px;
     margin-bottom: 50px;
-    /* padding-top: 50px; */
-    /* padding-bottom: 100px; */
     background-color: rgb(240, 248, 245);
     border-radius: 80%;
     padding-bottom: 50px;
 }
 
-h1{
+h1 {
     text-align: center;
-    color: rgb(94, 47, 55)
+    color: rgb(94, 47, 55);
 }
 
-.Cards{
+.Cards {
     background-color: black;
 }
 
+.image-notice {
+    margin-top: 10px;
+    font-size: 14px;
+    color: rgb(94, 47, 55);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    text-align: center;
+}
+
+.image-notice svg {
+    font-size: 12px;
+}
