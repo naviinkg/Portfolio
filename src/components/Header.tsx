@@ -56,12 +56,16 @@ function ResponsiveTabs() {
 
   // Scroll to the section when a tab is selected
   useEffect(() => {
-    const section = document.getElementById(activeTab);
-    if (section) {
-      window.scrollTo({
-        top: section.offsetTop - 60, // Adjust for header height
-        behavior: "smooth"
-      });
+    if (activeTab === "resume") {
+      window.open("https://drive.google.com/file/d/1ggxjW6UJu05E5tlQ9DPGFpEMOF_mWsHL/view?usp=sharing", "_blank");
+    } else {
+      const section = document.getElementById(activeTab);
+      if (section) {
+        window.scrollTo({
+          top: section.offsetTop - 60, // Adjust for header height
+          behavior: "smooth"
+        });
+      }
     }
   }, [activeTab]);
 
@@ -82,6 +86,7 @@ function ResponsiveTabs() {
         <Dropdown.Item eventKey="skills">Skills</Dropdown.Item>
         <Dropdown.Item eventKey="certifications">Certifications</Dropdown.Item>
         <Dropdown.Item eventKey="contact">Contact</Dropdown.Item>
+        <Dropdown.Item eventKey="resume">Resume</Dropdown.Item> {/* New Resume item */}
       </Dropdown.Menu>
     </Dropdown>
   ) : (
@@ -99,6 +104,7 @@ function ResponsiveTabs() {
       <Tab eventKey="skills" title={<span>Skills</span>} />
       <Tab eventKey="certifications" title={<span>Certifications</span>} />
       <Tab eventKey="contact" title={<span>Contact</span>} />
+      <Tab eventKey="resume" title={<span>Resume</span>} /> {/* New Resume tab */}
     </Tabs>
   );
 }
