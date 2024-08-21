@@ -12,7 +12,7 @@ const FrontPage: React.FC = () => {
         <Link to="/Portfolio/handmade-portfolio" className="btn">
           Handmade Portfolio
         </Link>
-        <Link to="https://sites.google.com/view/naveenkg/home" className="btn">
+        <Link to="https://naveen-kavitha-gunasekaran.vercel.app/" className="btn">
           Automated Portfolio
         </Link>
       </div>

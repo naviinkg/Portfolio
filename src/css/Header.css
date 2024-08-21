@@ -7,12 +7,12 @@
   z-index: 1000;
   display: flex;
   justify-content: center;
-  padding: 10px;
+  padding: 10px 0;
 }
 
 .nav-tabs {
   width: 100%;
-  max-width: 1200px;
+  padding: 0 15px; /* Retained padding */
 }
 
 .nav-tabs .nav-item {
@@ -46,9 +46,7 @@
   .nav-tabs {
     display: none;
   }
-
   .nav-dropdown {
     display: block;
   }
 }
-
