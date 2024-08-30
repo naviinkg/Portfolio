@@ -97,11 +97,12 @@ function GroupExample() {
             </Card.Text>
           </Card.Body>
           <Card.Footer>
-            <small className="text-muted">Built using <strong>React, Typescript, HTML, CSS, Bootstrap</strong>.</small>
+            <small className="text-muted">Built using <strong>Python, Jupyter Notebook</strong>.</small>
           </Card.Footer>
         </Card>
       </CardGroup>
-      <CardGroup>
+
+      <CardGroup style={{ paddingTop: '3%' }}>
         <Card>
             <Card.Title style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
               <a href="https://github.com/K-Jeyavenkatesh/ISHOP" target="_blank" rel="noopener noreferrer">
