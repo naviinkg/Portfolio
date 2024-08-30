@@ -50,7 +50,7 @@ function GroupExample() {
 
       <Card>
           <Card.Title style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
-          <a href="https://github.com/naviinkg/Insta-clone" target="_blank" rel="noopener noreferrer">
+          <a href="https://github.com/naviinkg/InstagramClone" target="_blank" rel="noopener noreferrer">
           <img src="https://cdn.pixabay.com/photo/2021/10/24/21/23/instagram-6739334_640.jpg"
               style={{
                 width: '120px',
@@ -65,7 +65,10 @@ function GroupExample() {
         <Card.Body>
           <Card.Title>Instagram Clone</Card.Title>
           <Card.Text>
-              Under construction
+          Developing an Instagram clone using Java, Spring Boot, and DynamoDB, 
+          focusing on user authentication, profile management, functionalities, and post operations. 
+          Implemented scalable data storage with DynamoDB and utilized BCrypt for password encryption. 
+          Integrated user interface interactions with React and Node.js, ensuring seamless user experience and secure data handling, integrated with Amazon SMS (Simple Mail Service) for OTP verification and Redis session management.
           </Card.Text>
         </Card.Body>
         <Card.Footer>
