@@ -72,7 +72,7 @@ function GroupExample() {
           </Card.Text>
         </Card.Body>
         <Card.Footer>
-          <small className="text-muted">Built using <strong>React, Bootstrap, Java SpringBoot, DynamoDB</strong>.</small>
+          <small className="text-muted">Built using <strong>React, Bootstrap, Java SpringBoot, DynamoDB, Redis, Amazon SES</strong>.</small>
         </Card.Footer>
       </Card>
 
