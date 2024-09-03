@@ -21,19 +21,14 @@ function Experience() {
     const amazon :experienceProps = {
         title: "Amazon, IN",
         desc1: "SDE Intern ",
-        desc2: "Enhanced the Amazon seller homepage using React JS, JavaScript, and TypeScript. This webpage now provides visibility into the"
-        +"ineligibility of the product for Subscribe and Save. It also provides detailed reasons for each product's ineligibility and guidance on actions"
-        +"needed to make them eligible."
-        +"Implemented front-end tests using Jest for quality assurance."
-        +"Created backend API with Java Spring Boot and Coral, performing backend unit tests with JUnit and Mockito."
-        +"Established Cloud Search and Dynamo tables on multiple regions for database management."
-        +"Implemented automated synchronization for data changes between Cloud Search and Dynamo across regions."
-        +"Optimized system performance, reducing synchronization time from 4 hours to 30 minutes for 300 million data entries."
-        +"Collaborated with multiple teams, organized meetings with senior developers, and led several meetings."
-        +"Took ownership of projects, resolved issues, and worked closely with the legal team, product managers, and senior SDEs on multiple teams"
-        +"on UI data display."
-        +"Contributed to migrating the codebase from deprecating databases to new databases."
-        +"Formed a team within Amazon and won an inter-org hackathon, impressing judges who were directors from various Amazon organizations.",
+        desc2: "•	Reduced TAT from 6 Days to Seconds:         Implemented a self-serve module that informs FBA Sellers about their products' Subscribe and Save (SnS) eligibility within seconds, eliminating the need for Seller Support intervention and reducing turnaround time from 6 days."
+        +"•	Improved Operational Efficiency:            Engineered and launched the Amazon Seller's Product Ineligibility Page using React JS, JavaScript, and TypeScript, providing detailed product eligibility for Subscribe and Save. This tool that reduced Seller Support's monthly contacts by 60% (approximately 800 contacts per month), achieving an estimated annual savings of $45K USD."
+        +"•	Backend Development:                   Developed backend API with Java Spring Boot and Coral, integrating Cloud Search and Dynamo tables across multiple regions using AWS SDK."
+        +"•	Data Management and Optimization:      Established Cloud Search and Dynamo tables for efficient database management and reduced synchronizing time by 4x by establishing an automated batch processing mechanism of over 300M data from 4 hours to 30 minutes."
+        +"•	Ownership:            Took complete ownership of the project and code I wrote, ensuring its stability and functionality. Resolved any bugs related to my project and provided knowledge transfer sessions about my project to teammates."
+        +"•	Database migration:            Contributed to migrating the codebase from deprecating databases to new databases."
+        +"•	Project Leadership and Collaboration:           Led cross-functional collaboration, organized meetings, and resolved issues by collaborating with legal teams, product managers, and senior SDEs."
+        +"•	Inter-organizational Achievement:                 Formed and led a winning team in an inter-org hackathon, impressing judges from various Amazon organizations",
         date: "Jan 2023 - June 2023"
     }
     
