@@ -2,6 +2,12 @@ import { Container } from "react-bootstrap";
 import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
 import '../css/Projects.css';
+import amazonLogo from '../images/amazon.png';
+import titleCardLogo from '../images/titleCardLogo.jpg';
+import fourkitesLogo from '../images/fourkites.jpg';
+import zohoLogo from '../images/zoho.png';
+import NEUlogo from '../images/NEU.png';
+import onlineAuctionLogo from '../images/online-reverse-auction-solution.png';
 
 function Projects(){
     return(
@@ -24,13 +30,11 @@ function GroupExample() {
       <Card>
           <Card.Title style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
           <a href="https://github.com/naviinkg/EventFinder" target="_blank" rel="noopener noreferrer">
-          <img src="https://miro.medium.com/v2/resize:fit:600/format:webp/1*nWFPcxzUnuGEQxICHfGhSQ.png"
-              style={{
+          <img src={fourkitesLogo} alt="Event Finder Logo" style={{
                 width: '120px',
                 height: '120px',
                 marginTop: '10%'
-              }}
-            />
+              }} />
             </a>
           
           </Card.Title>
@@ -51,13 +55,11 @@ function GroupExample() {
       <Card>
           <Card.Title style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
           <a href="https://github.com/naviinkg/InstagramClone" target="_blank" rel="noopener noreferrer">
-          <img src="https://cdn.pixabay.com/photo/2021/10/24/21/23/instagram-6739334_640.jpg"
-              style={{
+          <img src={zohoLogo} alt="Instagram Clone Logo" style={{
                 width: '120px',
                 height: '120px',
                 marginTop: '10%'
-              }}
-            />
+              }} />
             </a>
             
           
@@ -79,13 +81,11 @@ function GroupExample() {
       <Card>
             <Card.Title style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
             <a href="https://github.com/naviinkg/Health-Indicators-Diabetes" target="_blank" rel="noopener noreferrer">
-            <img src="https://copyassignment.com/wp-content/uploads/2022/09/Diabetes-prediction-using-Machine-Learning-768x576.jpg"
-                style={{
+            <img src={NEUlogo} alt="Health Indicators Logo" style={{
                   width: '120px',
                   height: '120px',
                   marginTop: '10%'
-                }}
-              />
+                }} />
               </a>
             
             </Card.Title>
@@ -106,13 +106,11 @@ function GroupExample() {
         <Card>
             <Card.Title style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
               <a href="https://github.com/K-Jeyavenkatesh/ISHOP" target="_blank" rel="noopener noreferrer">
-                <img src="https://banner2.cleanpng.com/20180519/jjs/kisspng-e-commerce-logo-electronic-business-5b00d2d0918d84.2335269315267806245962.jpg"
-                  style={{
+                <img src={amazonLogo} alt="Amazon E-Commerce Logo" style={{
                     width: '120px',
                     height: '120px',
                     marginTop: '10%'
-                  }}
-                />
+                  }} />
               </a>
             </Card.Title>
           <Card.Body>
@@ -128,13 +126,11 @@ function GroupExample() {
         <Card>
             <Card.Title style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
               <a href="https://github.com/Hitzzmuhil/Bootathon2" target="_blank" rel="noopener noreferrer">
-                <img src="https://c8.alamy.com/comp/WA0Y19/vector-logo-for-bidding-and-auctions-WA0Y19.jpg"
-                  style={{
+                <img src={onlineAuctionLogo} alt="Online Bidding Logo" style={{
                     width: '120px',
                     height: '120px',
                     marginTop: '10%'
-                  }}
-                />
+                  }} />
               </a>
             </Card.Title>
           <Card.Body>
@@ -150,13 +146,11 @@ function GroupExample() {
         <Card>
             <Card.Title style={{ display: 'flex', justifyContent: 'center', flexDirection: 'column', alignItems: 'center' }}>
             <a href="https://github.com/naviinkg/Portfolio" target="_blank" rel="noopener noreferrer">
-            <img src="https://banner2.cleanpng.com/20180330/toq/kisspng-portfolio-kitchen-photography-studio-apartment-portfolio-5abe433027c374.8238636815224184801629.jpg"
-                style={{
+            <img src={titleCardLogo} alt="My Portfolio Logo" style={{
                   width: '120px',
                   height: '120px',
                   marginTop: '10%'
-                }}
-              />
+                }} />
               </a>
             
             </Card.Title>
