@@ -18,6 +18,16 @@ interface experienceProps{
 
 
 function Experience() {
+    const aws :experienceProps = {
+        title: "AWS, DocumentDB",
+        desc1: "SDE Intern",
+        desc2: "•	Designed and implemented a scalable rollback notification system impacting ~100,000 customers/region, reducing support tickets by 30% during engine version rollbacks by proactively communicating rollback events."
+        +"•	Built an event-driven architecture using pipeline triggers, SNS, SQS, Lambda, and Step Functions to deliver context-aware rollback alerts based on customer upgrade status and version compatibility"
+        +"•	Automated MVU (Major Version Upgrade) limit testing by provisioning clusters, injecting synthetic workloads across multiple configurations, and collecting benchmark data—reducing manual testing effort by 80% and producing upgrade duration baselines for future releases."
+        +"•	Conducted root cause analysis (RCA) on notification failures, implemented categorized solutions, and improved end-to-end delivery reliability by 25%.",
+        date: "May 2025 - August 2025"
+    }
+
     const amazon :experienceProps = {
         title: "Amazon, IN",
         desc1: "SDE Intern ",
@@ -65,7 +75,7 @@ function Experience() {
             date: "May 2024 - Dec 2024"
         }
 
-    const experienceArray : experienceProps[] = [amazon, fourkites, TA];
+    const experienceArray : experienceProps[] = [aws, amazon, fourkites, TA];
 
     return (
         <Container className='Experience' >
@@ -99,6 +109,8 @@ function HeaderAndFooterExample({ experienceArray }: { experienceArray: experien
 
 function getImageSource(title: string): string {
     switch (title) {
+        case 'AWS, DocumentDB':
+            return amazonLogo;
         case 'Amazon, IN':
             return amazonLogo;
         case 'Fourkites, IN':
