@@ -56,8 +56,8 @@ function ResponsiveTabs() {
 
   // Scroll to the section when a tab is selected
   useEffect(() => {
-    if (activeTab === "resume") {
-      window.open("https://drive.google.com/file/d/1vILcyM5mlIpvz_Z6yaihIccT1XnQsYxV/view?usp=sharing", "_blank");
+            if (activeTab === "resume") {
+          window.open("https://drive.google.com/file/d/1CKkulPkcngkvE4534B-lcAqyjem-_3p9/view?usp=sharing", "_blank");
     } else {
       const section = document.getElementById(activeTab);
       if (section) {
