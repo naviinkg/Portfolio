@@ -11,10 +11,10 @@ const FrontPage: React.FC = () => {
       
       <div className="button-container">
         <Link to="/Portfolio/handmade-portfolio" className="btn">
-          Handmade Portfolio
+          Handmade SDE Portfolio
         </Link>
         <Link to="https://naveen-kavitha-gunasekaran.vercel.app/" className="btn">
-          Automated Portfolio
+          Automated DS Portfolio
         </Link>
       </div>
       <div className="game-container">
