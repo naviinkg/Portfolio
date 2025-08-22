@@ -7,6 +7,7 @@ const FrontPage: React.FC = () => {
   return (
     <div className="front-page">
       <h1>Choose a Portfolio</h1>
+      <p> Visit this page in a Laptop to see something interesting </p>
       
       <div className="button-container">
         <Link to="/Portfolio/handmade-portfolio" className="btn">
